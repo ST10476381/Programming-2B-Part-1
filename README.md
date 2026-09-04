@@ -24,9 +24,7 @@ Participants are the runners and cyclists who take part. They can browse events 
 README.md                               - This file
 ```
 
-## Database
 
-The database is built around six core entities: `Organiser`, `Participant`, `Event`, `Category`, `Enrolment`, and `Result`. Full details, including primary keys, foreign keys, and cardinality, are documented in the ERD and implemented in `RaceDay_Schema.sql`.
 
 ## Setup notes
 
