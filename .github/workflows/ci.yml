@@ -4,7 +4,7 @@ name: Repo Structure Validation
  
 # Runs automatically whenever you push or open a pull request,
 # so it demonstrates a working CI workflow for the rubric.
-on:
+"on":
   push:
     branches: [ main, master ]
   pull_request:
