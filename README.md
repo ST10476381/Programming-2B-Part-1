@@ -10,6 +10,7 @@ RaceDay is built around two types of users, each with a different job to do.
 
 Organisers are the clubs, race committees, and event companies who actually put these races on. They create events on the platform, break each one down into categories (say, a 5km fun run and a 21km alongside it), and set the entry fee and participant cap for each. Once race day has come and gone, they're also the ones who capture the results. An organiser only has control over the events they themselves created — they can't touch anyone else's.
 
+Participants are the runners and cyclists who take part. They can browse events without needing an account, but once they've registered they can enrol in a category, keep track of the races they've entered, and look back over their own results and times after each event. Like organisers, participants can only manage their own enrolments — not anyone else's.
 
 ## Repository structure
 
