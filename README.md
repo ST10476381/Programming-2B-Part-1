@@ -1,5 +1,4 @@
-# Programming-2B-Part-1
-System Learning and Database
+
 # RaceDay
 
 RaceDay is a full-stack, web-based event management system built for the South African road running, walking, and cycling community. It replaces the paper-based registration, spreadsheets, and disconnected communication that many local events still rely on, giving organisers a central platform to manage events and giving participants an easy way to enter races and track their own results.
