@@ -7,8 +7,7 @@ This is an individual project (module: PROG6212 - Programming 2B) built progress
 
 ## Roles
 
-- **Organiser** - creates and manages events, defines categories for each event, and captures results once a race has taken place.
-- **Participant** - browses upcoming events, enrols in categories, tracks their personal enrolment and results history, and checks event details ahead of race day.
+RaceDay is built around two types of users, each with a different job to do.
 
 ## Repository structure
 
