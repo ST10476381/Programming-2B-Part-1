@@ -25,7 +25,9 @@ README.md                               - This file
 ```
 
 
+## Database
 
+The database is built around six core entities: `Organiser`, `Participant`, `Event`, `Category`, `Enrolment`, and `Result`. Full details, including primary keys, foreign keys, and cardinality, are documented in the ERD and implemented in `RaceDay_Schema.sql`.
 ## Setup notes
 
 1. Run `RaceDay_Schema.sql` in SQL Server Management Studio (SSMS). It creates the `RaceDay` database if it does not already exist, builds all tables and constraints, and seeds sample data.
