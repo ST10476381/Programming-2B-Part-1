@@ -6,8 +6,10 @@ RaceDay is a full-stack, web-based event management system built for the South A
 This is an individual project (module: PROG6212 - Programming 2B) built progressively across three parts. By the final submission it will be a fully containerised, cloud-aware, API-driven platform reflecting real-world software development practices used in the sports technology industry.
 
 ## Roles
-
 RaceDay is built around two types of users, each with a different job to do.
+
+Organisers are the clubs, race committees, and event companies who actually put these races on. They create events on the platform, break each one down into categories (say, a 5km fun run and a 21km alongside it), and set the entry fee and participant cap for each. Once race day has come and gone, they're also the ones who capture the results. An organiser only has control over the events they themselves created — they can't touch anyone else's.
+
 
 ## Repository structure
 
