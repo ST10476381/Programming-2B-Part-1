@@ -38,4 +38,4 @@ The database is built around six core entities: `Organiser`, `Participant`, `Eve
 GitHub repository link submitted via ARC for each part, per module requirements.
 
 ## SCREENSHOT OF CI/CD PIPELINE
-![RaceDay ERD](docs/RACEDAY%20ERD.drawio.png
+https://github.com/ST10476381/Programming-2B-Part-1/blob/main/Screenshot%20(94).png
