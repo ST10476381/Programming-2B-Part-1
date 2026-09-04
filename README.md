@@ -33,6 +33,3 @@ The database is built around six core entities: `Organiser`, `Participant`, `Eve
 1. Run `RaceDay_Schema.sql` in SQL Server Management Studio (SSMS). It creates the `RaceDay` database if it does not already exist, builds all tables and constraints, and seeds sample data.
 2. See `RaceDay_API_Endpoint_Plan.pdf` for the full list of planned API endpoints, request/response formats, and role requirements.
 
-## Submission
-
-GitHub repository link submitted via ARC for each part, per module requirements.
