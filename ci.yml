@@ -1,0 +1,57 @@
+name: Repo Structure Validation
+
+# Runs automatically whenever you push or open a pull request,
+# so it demonstrates a working CI workflow for the rubric.
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          echo "Checking required project files are present..."
+
+          test -d docs || { echo "Missing /docs folder"; exit 1; }
+          test -f README.md || { echo "Missing README.md"; exit 1; }
+
+          # At least one ERD file (PNG or PDF) must exist in /docs
+          if ! ls docs/*ERD*.png docs/*ERD*.pdf >/dev/null 2>&1; then
+            echo "Missing ERD file (PNG or PDF) in /docs"
+            exit 1
+          fi
+
+          # API endpoint plan (PDF or Markdown) must exist in /docs
+          if ! ls docs/*API*.pdf docs/*API*.md >/dev/null 2>&1; then
+            echo "Missing API endpoint plan (PDF or Markdown) in /docs"
+            exit 1
+          fi
+
+          # SQL schema script must exist in /docs
+          if ! ls docs/*.sql >/dev/null 2>&1; then
+            echo "Missing .sql schema file in /docs"
+            exit 1
+          fi
+
+          echo "All required files are present."
+
+      - name: Basic SQL script sanity check
+        run: |
+          SQL_FILE=$(ls docs/*.sql | head -n 1)
+          echo "Checking $SQL_FILE for required keywords..."
+
+          for keyword in "CREATE TABLE" "PRIMARY KEY" "FOREIGN KEY" "INSERT INTO"; do
+            if ! grep -qi "$keyword" "$SQL_FILE"; then
+              echo "Warning: '$keyword' not found in $SQL_FILE"
+              exit 1
+            fi
+          done
+
+          echo "SQL script contains expected structural keywords."
